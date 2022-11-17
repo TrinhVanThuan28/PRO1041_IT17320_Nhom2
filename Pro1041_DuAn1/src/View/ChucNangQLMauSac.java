@@ -154,11 +154,17 @@ public class ChucNangQLMauSac extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tb_mausac);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(0));
+        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 153, 51));
         jLabel5.setText("Tìm Kiếm");
+
+        cbb_Ten.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbb_TenActionPerformed(evt);
+            }
+        });
 
         btn_timKiem.setText("Tìm");
         btn_timKiem.addActionListener(new java.awt.event.ActionListener() {
@@ -353,6 +359,10 @@ public class ChucNangQLMauSac extends javax.swing.JFrame {
         fillTable();
         JOptionPane.showMessageDialog(this, "Tìm kiếm thành công");
     }//GEN-LAST:event_btn_timKiemActionPerformed
+
+    private void cbb_TenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbb_TenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbb_TenActionPerformed
     public void clearForm() {
         lbl_id.setText("-");
         txt_ma.setText("");
