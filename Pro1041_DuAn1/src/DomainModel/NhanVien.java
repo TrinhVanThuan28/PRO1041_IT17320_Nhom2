@@ -11,7 +11,8 @@ import java.util.Date;
  * @author BOSS
  */
 public class NhanVien {
-    private String id ;
+
+    private String id;
     private String ma;
     private String hoten;
     private Date ngaysinh;
@@ -19,23 +20,6 @@ public class NhanVien {
     private String sdt;
     private String diaChi;
     private String email;
-    private String idch;
-    ChucVu cv = new ChucVu();
-
-    public NhanVien(String id, String ma, String hoten, Date ngaysinh, String gioitinh, String sdt, String diaChi, String email, String idch) {
-        this.id = id;
-        this.ma = ma;
-        this.hoten = hoten;
-        this.ngaysinh = ngaysinh;
-        this.gioitinh = gioitinh;
-        this.sdt = sdt;
-        this.diaChi = diaChi;
-        this.email = email;
-        this.idch = idch;
-    }
-
-    public NhanVien() {
-    }
 
     public String getId() {
         return id;
@@ -101,21 +85,24 @@ public class NhanVien {
         this.email = email;
     }
 
-    public String getIdch() {
-        return idch;
+    public NhanVien(String id, String ma, String hoten, Date ngaysinh, String gioitinh, String sdt, String diaChi, String email) {
+        this.id = id;
+        this.ma = ma;
+        this.hoten = hoten;
+        this.ngaysinh = ngaysinh;
+        this.gioitinh = gioitinh;
+        this.sdt = sdt;
+        this.diaChi = diaChi;
+        this.email = email;
     }
 
-    public void setIdch(String idch) {
-        this.idch = idch;
+    public NhanVien() {
     }
 
-    public ChucVu getCv() {
-        return cv;
+    @Override
+    public String toString() {
+        return  hoten ;
     }
-
-    public void setCv(ChucVu cv) {
-        this.cv = cv;
-    }
-    
-             
+   
+   
 }

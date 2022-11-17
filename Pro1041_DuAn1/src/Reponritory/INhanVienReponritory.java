@@ -5,6 +5,7 @@
 package Reponritory;
 
 import DomainModel.NhanVien;
+
 import java.util.ArrayList;
 
 /**
@@ -16,5 +17,6 @@ public interface INhanVienReponritory {
     boolean them(NhanVien nv);
     boolean xoa (String id);
     boolean sua(String id,NhanVien nv);
-   
+    ArrayList<NhanVien> search(String ten);
+    String checkMa(String ma);
 }

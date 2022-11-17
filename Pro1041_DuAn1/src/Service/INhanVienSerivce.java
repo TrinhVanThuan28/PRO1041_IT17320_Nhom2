@@ -5,6 +5,7 @@
 package Service;
 
 import DomainModel.NhanVien;
+
 import java.util.ArrayList;
 
 /**
@@ -12,9 +13,17 @@ import java.util.ArrayList;
  * @author BOSS
  */
 public interface INhanVienSerivce {
+
     ArrayList<NhanVien> getlist();
+
     String them(NhanVien nv);
+
     String xoa(String id);
-    String sua(String id,NhanVien nv);
-    
+
+    String sua(String id, NhanVien nv);
+
+    ArrayList<NhanVien> search(String ma);
+
+    String checkMa(String ma);
+
 }

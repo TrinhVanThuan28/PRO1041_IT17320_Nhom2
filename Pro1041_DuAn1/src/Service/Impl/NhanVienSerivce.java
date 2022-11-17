@@ -8,6 +8,7 @@ import DomainModel.NhanVien;
 import Reponritory.INhanVienReponritory;
 import Reponritory.Impl.NhanVienReponritoty;
 import Service.INhanVienSerivce;
+
 import java.util.ArrayList;
 
 /**
@@ -50,5 +51,21 @@ public class NhanVienSerivce implements INhanVienSerivce{
          return "sửa thất bại";
          }
     }
+
+    @Override
+    public ArrayList<NhanVien> search(String ma) {
+     return this.nvr.search(ma);
+    }
+
+    @Override
+    public String checkMa(String ma) {
+    return this.nvr.checkMa(ma);
+    }
+
+   
+
+    
+
+  
     
 }

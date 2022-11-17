@@ -6,20 +6,23 @@ package DomainModel;
 
 /**
  *
- * @author BOSS
+ * @author KIEN TRAN
  */
-public class ChucVu {
+public class QuanAo {
+
     private String id;
     private String ma;
     private String ten;
+    private float giaNhap;
 
-    public ChucVu(String id, String ma, String ten) {
+    public QuanAo() {
+    }
+
+    public QuanAo(String id, String ma, String ten, float giaNhap) {
         this.id = id;
         this.ma = ma;
         this.ten = ten;
-    }
-
-    public ChucVu() {
+        this.giaNhap = giaNhap;
     }
 
     public String getId() {
@@ -46,9 +49,17 @@ public class ChucVu {
         this.ten = ten;
     }
 
+    public float getGiaNhap() {
+        return giaNhap;
+    }
+
+    public void setGiaNhap(float giaNhap) {
+        this.giaNhap = giaNhap;
+    }
+
     @Override
     public String toString() {
-        return  ten ;
+        return ten;
     }
-    
+
 }
